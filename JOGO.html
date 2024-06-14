@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tempo jurássico</title>
+    <link rel="shortcut icon" href="imagens/logo jogo.png" type="image/x-icon">
+    <style>
+       
+        canvas{
+            border: 1px solid black;
+        }
+
+        .start-button {
+            position: absolute;
+            top: 50%; /* Posiciona o botão no meio verticalmente */
+            left: 50%; /* Posiciona o botão no meio horizontalmente */
+            transform: translate(-50%, -50%); /* Move o botão para trás metade da sua largura e altura */
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #f77524; /* Cor de fundo */
+            color: white; /* Cor do texto */
+            border: none; /* Remove a borda padrão */
+            border-radius: 5px; /* Arredonda os cantos */
+            transition: all 0.3s ease; /* Transição suave para hover */
+        }
+        .start-button:hover {
+            background-color: #45a049; /* Cor de fundo ao passar o mouse */
+        }
+        
+        
+       </style>
+</head>
+<body background="black" class="jogo-dino">
+     
+
+    <div class="gameBoard">
+        <img src="imagens/clouds.png" class="cloud">
+        <img src="imagens/clouds2.png" class="cloud2">
+        <img src="imagens/dinofake.png" class="dino">
+        <img src="imagens/pipe.png" class="pipe">
+        <div id="score">Pontuação: 0</div> <!-- Novo elemento de pontuação -->
+
+        <button onclick="inicioJogo()" id="startButton" class="start-button">Iniciar Jogo</button>
+
+        <div id="questionBox" class="question-box" style="display: none;">
+            <h2>Pergunta:</h2>
+            <p>Se uma turma tem 20 alunos e 25% deles estão usando camisetas azuis, <p>
+                temos quantos alunos vestidos de azul?Se uma turma tem 20 alunos e 25% deles </p>
+                <p>estão usando camisetas azuis, temos quantos alunos vestidos de azul?</p>
+            <button onclick="checkAnswer('Brasília')">A) 5</button>
+            <button onclick="checkAnswer('Rio de Janeiro')">B) 12</button>
+            <button onclick="checkAnswer('São Paulo')">C) 8</button>
+        </div>
+    </div>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>

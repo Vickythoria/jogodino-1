@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.imagemfundo {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url('cenario.png');
+    background-size: cover; 
+    filter:blur(3px);
+    z-index: -1;
+}
+
+.gameBoard {
+    width: 80%;
+    top: 100px;
+    height: 500px;
+    border: 2px solid black;
+    border-bottom: 25px solid rgba(87, 75, 75, 0.968);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background-image: url("cenarioterra.png");
+    background-size: cover;
+    /* Para garantir que a imagem cubra todo o elemento */
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    font-weight: garamond;
+}
+
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    animation: pipe-animations 2s infinite linear;
+}
+
+.pipe2 {
+    position: absolute;
+    bottom: 0;
+    width: 70px;
+    animation: pipe-animations 5s infinite linear;
+}
+
+.dino {
+    width: 100px;
+    position: absolute;
+    bottom: 1px;
+    left: 20px;
+}
+
+.jump {
+    animation: dino-animation 500ms ease-out;
+}
+
+.cloud {
+    width: 850px;
+    height: 200px;
+    position: absolute;
+    animation: cloud 5.5s infinite linear;
+}
+
+.cloud2 {
+    width: 850px;
+    height: 200px;
+    position: absolute;
+    animation: cloud 3.2s infinite linear;
+}
+
+.game-over {
+    visibility: hidden;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(65, 57, 57, 0.363)
+}
+
+.restart {
+    height: 60px;
+    width: 350px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    background-color: rgb(220, 54, 54);
+    cursor: pointer;
+}
+
+@keyframes pipe-animations {
+    from {
+        right: 50px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+/* Estilo para a modal */
+.modal {
+    display: none;
+    /* Inicia oculta */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(53, 255, 96, 0.5);
+    /* Fundo escuro semitransparente */
+    z-index: 9999;
+}
+
+.modal-content {
+    background-color: #cfff6f;
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Estilo para o botão de fechar */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.question-box {
+    text-align: center;
+    /* Alinha o texto ao centro horizontalmente */
+    height: 120px;
+    /* Ajusta a altura para ocupar toda a altura disponível */
+    background-color: lightblue;
+    /* Cor de fundo */
+    margin-top: 220px;
+    /* Adiciona espaço superior */
+    width: 500px;
+    padding: 10px;
+    left: 50%;
+    transform: translate(70%)
+}
+
+@keyframes dino-animation {
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 120px
+    }
+
+    50% {
+        bottom: 120px;
+    }
+
+    60% {
+        bottom: 120px
+    }
+
+    100% {
+        bottom: 0px
+    }
+}
+
+@keyframes cloud {
+    from {
+        right: -1050px;
+    }
+
+    to {
+        right: 100%
+    }
+}
+
+
+@keyframes cloud2 {
+    to {
+        right: -940px;
+    }
+
+    from {
+        right: 100%
+    }
+
+}
+
+@media (max-width: 620px) {
+    .dino {
+        width: 50px;
+        position: absolute;
+        bottom: 0px;
+    }
+
+    .pipe {
+        position: absolute;
+        bottom: 0;
+        width: 50px;
+        animation: pipe-animations 2, 5s infinite linear;
+    }
+
+    .pipe2 {
+        position: absolute;
+        bottom: 0;
+        width: 50px;
+        animation: pipe-animations 2, 5s infinite linear;
+    }
+}
