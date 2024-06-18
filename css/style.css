@@ -175,7 +175,7 @@ a{
 }
 
 .seta{
-    margin-left: 400px;
+    margin-left: 350px;
     margin-top: 3px;
     cursor: pointer;
     display: block;
@@ -241,6 +241,7 @@ body {
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: block;
 }
 
 .container3 {
@@ -300,8 +301,14 @@ button:hover {
     position: absolute;
     top: 15px;
     right: 100px;
-    display: flex;
+    display: block;
+    margin-top: 600px;
+    margin-right: 900px;
+    bottom:30%;
+}
 
+.Voltar:hover{
+    transform: scale(1.2);
 }
 
 /*REBECA*/
