@@ -54,7 +54,13 @@ right: 30%;
 transition: transform 0.3s;
 margin-top: 50px;
 margin-left: 50px;
+
 }
+
+a{
+    text-decoration: none;
+}
+
 
 .startbutton3:hover{
     transform: scale(1.2);
@@ -97,7 +103,7 @@ margin-left: 50px;
     width:600px; /* largura */
     height: 300px; /* altura */
     border:1px solid #333;
-    margin-top: 80px;
+    margin-top: 50px;
     margin-left: 320px;
     padding: 20px;
     background-color: chocolate;
@@ -120,7 +126,7 @@ h1{
 }
 
 .startbutton2{
-border-radius: 15%;
+border-radius: 10%;
 padding: 15px 30px;
 font-size: 18px;
 background-color: chocolate;
@@ -130,10 +136,14 @@ margin: 10px;
 display: block;
 bottom:30%;
 right: 30%;
-margin-top: 20px;
+margin-top: 35px;
 margin-left: 580px;
 transition: transform 0.3s;
 cursor: pointer;
+}
+
+a{
+    text-decoration: none;
 }
 
 .startbutton2:hover{
@@ -160,11 +170,24 @@ cursor: pointer;
 }
 
 .musica{
-    margin-top: 1px;
-    margin-right: 1000px; /*esquerda*/
-    
-    
+    margin-top: 10px;
+    margin-right: 1000px; /*esquerda*/  
 }
+
+.seta{
+    margin-left: 400px;
+    margin-top: 3px;
+    cursor: pointer;
+    display: block;
+    bottom:30%;
+transition: transform 0.3s;
+}
+
+.seta:hover {
+    transform: scale(1.5); /* Aumenta o ícone ao passar o mouse */
+}
+
+
 
 /*YARA*/
 body {
