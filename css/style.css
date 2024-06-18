@@ -180,7 +180,7 @@ a{
     cursor: pointer;
     display: block;
     bottom:30%;
-transition: transform 0.3s;
+    transition: transform 0.3s;
 }
 
 .seta:hover {
@@ -290,6 +290,18 @@ button {
 
 button:hover {
     background-color: #886621;
+}
+
+.Voltar{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+    position: absolute;
+    top: 15px;
+    right: 100px;
+    display: flex;
+
 }
 
 /*REBECA*/
