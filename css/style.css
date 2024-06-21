@@ -85,8 +85,28 @@ a{
     transform: scale(1.2);
 }
 
+.submenu {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    gap: 50px;
+    top: 15px;
+}
+
 .musica{
-    margin-right: 860px;
+    transition: transform 0.3s;
+}
+
+.efeito{
+    transition: transform 0.3s;
+}
+
+.musica:hover{
+    transform: scale(1.2);
+}
+
+.efeito:hover{
+    transform: scale(1.2);
 }
 
 /*VICTORIA*/
@@ -191,6 +211,28 @@ a{
     transform: scale(1.5); /* Aumenta o ícone ao passar o mouse */
 }
 
+.submenu1 {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    
+}
+
+.musica{
+    transition: transform 0.3s;
+}
+
+.efeito{
+    transition: transform 0.3s;
+}
+
+.musica:hover{
+    transform: scale(1.2);
+}
+
+.efeito:hover{
+    transform: scale(1.2);
+}
 
 
 /*YARA*/
@@ -312,6 +354,28 @@ button:hover {
 }
 
 .Voltar:hover{
+    transform: scale(1.2);
+}
+
+.submenu2 {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.musica{
+    transition: transform 0.3s;
+}
+
+.efeito{
+    transition: transform 0.3s;
+}
+
+.musica:hover{
+    transform: scale(1.2);
+}
+
+.efeito:hover{
     transform: scale(1.2);
 }
 
