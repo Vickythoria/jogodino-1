@@ -66,6 +66,7 @@
     height: 200px;
     position: absolute;
     animation: cloud 5.5s infinite linear;
+    margin-top: 5px;
 }
 
 .cloud2 {
@@ -143,18 +144,34 @@
 }
 
 .question-box {
-    text-align: center;
-    /* Alinha o texto ao centro horizontalmente */
-    height: 120px;
-    /* Ajusta a altura para ocupar toda a altura disponível */
-    background-color: lightblue;
-    /* Cor de fundo */
-    margin-top: 220px;
-    /* Adiciona espaço superior */
-    width: 500px;
+    text-align: center; /* Alinha o texto ao centro horizontalmente */
+    height: 200px; /* Ajusta a altura para ocupar toda a altura disponível */
+    background-color: lightblue; /* Cor de fundo */
+    margin-top: 100px; /* Adiciona espaço superior */
+    width: 450px;
     padding: 10px;
     left: 50%;
     transform: translate(70%)
+}
+
+.question-box h2 {
+    margin-bottom: 20px;
+}
+
+.question-box p {
+    letter-spacing: 2px; /* Espaçamento entre letras */
+    margin-bottom: 20px; /* Espaçamento inferior para separar do botão */
+}
+
+.question-box .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+.question-box button {
+    padding: 5px 5px;
+    cursor: pointer;
 }
 
 @keyframes dino-animation {
@@ -221,4 +238,33 @@
         width: 50px;
         animation: pipe-animations 2, 5s infinite linear;
     }
+}
+
+.seta3{
+    margin-left: 50px;
+    margin-top: 25px;
+    cursor: pointer;
+    display: block;
+    bottom:30%;
+    transition: transform 0.3s;
+}
+
+.seta3:hover {
+    transform: scale(1.5); /* Aumenta o ícone ao passar o mouse */
+}
+
+#backButton {
+    display: none;
+}
+
+.seta2{
+    transition: transform 0.3s;
+}
+
+.seta2:hover {
+    transform: scale(1.5); /* Aumenta o ícone ao passar o mouse */
+}
+
+.musica{
+    margin-top: 20px;
 }

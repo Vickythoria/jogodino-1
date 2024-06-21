@@ -11,6 +11,7 @@ let score = 0;
 let gameLoop;
 let scoreInterval;
 
+
 const updateScore = () => {
     score += 1;
     scoreElement.textContent = `Pontuação: ${score}`;
@@ -48,6 +49,7 @@ const loop = setInterval (() => {
         cloud2.style.animation = 'cloud 30s infinite linear';
         //showModal(); // Exibe a modal ao colidir com o obstáculo
         questionBox.style.display = 'block'; // Exibe a modal com a pergunta
+        backButton.style.display = 'block';
         stopScore(); // Para a pontuação
         clearInterval(gameLoop); // Pausa o loop do jogo
 
@@ -69,6 +71,7 @@ function checkAnswer(answer) {
 
     // Oculta a modal após responder
     questionBox.style.display = 'none';
+    backButton.style.display = 'none';
 }
 
 // Event Listeners
