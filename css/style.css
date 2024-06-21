@@ -106,30 +106,31 @@ a{
     margin-top: 100px;
     margin-left: 20px;
     padding: 20px;
-    background-color: chocolate;
-    opacity: 60%;
+    background-color: rgba(210, 105, 30, 0.735);
     border-radius: 20px;
     
 }
 
-
 h1{
     text-align: center;
     font-size: 40px;
+    color: #434242;
 }
+
 .texto h5{
-    color: black;
+    color: rgb(61, 61, 61);
     position: relative;
     text-align: justify;
     font-family: inherit;
     font-size: 18px;
+    line-height: 25px;
 }
 
 .startbutton2{
 border-radius: 10%;
 padding: 15px 30px;
 font-size: 18px;
-background-color: chocolate;
+background-color: hsl(25, 75%, 47%);
 color: aliceblue;
 border: none;
 margin: 10px;
@@ -237,15 +238,15 @@ body {
 }
 
 .outer-container {
-    background-color: #fab027;
+    background-color: hsl(25, 87%, 55%);
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     display: block;
 }
 
 .container3 {
-    background-color: #ffa500;
+    background-color: hsla(25, 94%, 63%, 0.849);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
