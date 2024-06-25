@@ -15,11 +15,26 @@
         canvas{
             border: 1px solid black;
         }
+        .timer, .score {
+            font-size: 24px;
+            font-weight: bold;
+            position: fixed;
+            top: 10px;
+        }
+        .timer {
+            left: 10px;
+        }
+        .score {
+            right: 10px;
+        }
+
+        
        </style>
 </head>
 <body>
     
     <div class="imagemfundo"> </div>
+    
     
     <div class="gameBoard">
         <a href="index.html" id="backButton"> <img src="imagens/voltar.png" width="35" height="35" class="seta3"> </a>
@@ -44,7 +59,8 @@
         <a href="C:\Users\Aluno\Documents\GitHub\jogodino/historia.html"> <img src="imagens/seta.png" width="40" height="40" class="seta2" style="left:50px; 
         bottom: 50px; position: fixed;"> </a>
     </div>
-    
+    <div class="timer" id="timer">Tempo: 0s</div>
     <script src="js/javascript.js" defer></script>
+    
 </body>
 </html>
