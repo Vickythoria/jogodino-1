@@ -101,7 +101,7 @@
 
 @keyframes pipe-animations {
     from {
-        right: 50px;
+        right: -50px;
     }
 
     to {
@@ -268,13 +268,17 @@
 
 .question-box {
     text-align: center; /* Alinha o texto ao centro horizontalmente */
-    height: 200px; /* Ajusta a altura para ocupar toda a altura disponível */
-    background-color: lightblue; /* Cor de fundo */
-    margin-top: 100px; /* Adiciona espaço superior */
     width: 450px;
-    padding: 10px;
     left: 50%;
-    transform: translate(70%)
+    transform: translate(70%);
+    flex-direction: column;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 250px;
+    margin-top: 75px;
+    margin-right: 220px;
 }
 
 .question-box h2 {
